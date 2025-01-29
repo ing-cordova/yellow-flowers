@@ -13,18 +13,12 @@ function App() {
   const [name, setName] = useState("");
 
   useEffect(() => {
-    const name = getQueryParamValue("novia");
-    if (name) {
-      document.title = `Flores para ${name}`;
-      setName(name);
-    }
-
     document.title = "Flores amarillas";
   }, []);
 
   return (
     <>
-      <h1>Flores amarillas para mi hermosa {name ? name : "Marjorie"}</h1>
+      <h1>Flores amarillas para mi hermosa novia Laurita</h1>
 
       <div className="flower">
         <div className="mid"></div>
